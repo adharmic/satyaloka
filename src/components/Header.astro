@@ -1,0 +1,22 @@
+---
+import NavBar from "./NavBar.astro";
+import HeroText from "./HeroText.astro";
+import Separator from "./Separator.astro";
+---
+
+<div class="flex max-h-fit">
+  <HeroText />
+  <NavBar />
+</div>
+<div class="flex flex-col gap-2 items-end">
+  <Separator />
+  <div
+    class="font-['Faculty'] font-bold flex items-center justify-evenly w-full"
+  >
+    <p>ARTWORK</p>
+    <p>ARTICLES</p>
+    <p>REVIEWS</p>
+    <p>ANALYSES</p>
+  </div>
+  <Separator />
+</div>

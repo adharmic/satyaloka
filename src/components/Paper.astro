@@ -1,0 +1,22 @@
+<div
+  class="wallpaper bg-[#061923] w-full h-full flex items-center justify-center"
+>
+  <div
+    class="paper bg-[--page] w-[1200px] h-full p-16 text-[--background] flex flex-col overflow-y-scroll"
+  >
+    <slot />
+  </div>
+</div>
+<style>
+  .wallpaper {
+    background-image: url("/textures/damask.jpg");
+    background-size: contain;
+    background-blend-mode: overlay;
+  }
+
+  .paper {
+    background-image: url("/textures/paper.jpg");
+    background-size: 80%;
+    background-blend-mode: multiply;
+  }
+</style>
