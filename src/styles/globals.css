@@ -1,0 +1,31 @@
+@font-face {
+    font-family: "Faculty";
+    src: url("/fonts/FacultyGlyphic-Regular.ttf");
+  }
+
+  @font-face {
+    font-family: "Busillis";
+    src: url("/fonts/In die busillis.ttf");
+  }
+
+  @font-face {
+    font-family: "Darwin";
+    src: url("/fonts/DarwinSerif-Regular.ttf");
+  }
+  :root {
+    --damask: #061822;
+    --paper: #ffe9d7;
+    --red: #c41e3a;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  html,
+  body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }

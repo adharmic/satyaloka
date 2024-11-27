@@ -1,0 +1,12 @@
+<div class="paper w-[1200px] h-full p-16 flex flex-col overflow-y-scroll">
+  <slot />
+</div>
+
+<style>
+  .paper {
+    background-color: var(--paper);
+    background-image: url("/textures/paper.jpg");
+    background-size: 50%;
+    background-blend-mode: multiply;
+  }
+</style>

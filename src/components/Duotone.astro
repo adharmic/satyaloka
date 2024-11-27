@@ -1,0 +1,42 @@
+<div class="sepia">
+  <slot />
+</div>
+
+<svg>
+  <filter
+    id="sepia"
+    x="-10%"
+    y="-10%"
+    width="120%"
+    height="120%"
+    filterUnits="objectBoundingBox"
+    primitiveUnits="userSpaceOnUse"
+    color-interpolation-filters="sRGB"
+  >
+    <feColorMatrix
+      type="matrix"
+      values="1 0 0 0 0
+1 0 0 0 0
+1 0 0 0 0
+0 0 0 1 0"
+      in="SourceGraphic"
+      result="colormatrix"></feColorMatrix>
+    <feComponentTransfer in="colormatrix" result="componentTransfer">
+      <feFuncR type="table" tableValues="0.02 1"></feFuncR>
+      <feFuncG type="table" tableValues="0.09 0.91"></feFuncG>
+      <feFuncB type="table" tableValues="0.13 0.84"></feFuncB>
+      <feFuncA type="table" tableValues="0 1"></feFuncA>
+    </feComponentTransfer>
+    <feBlend
+      mode="normal"
+      in="componentTransfer"
+      in2="SourceGraphic"
+      result="blend"></feBlend>
+  </filter>
+</svg>
+
+<style>
+  .sepia {
+    filter: none;
+  }
+</style>

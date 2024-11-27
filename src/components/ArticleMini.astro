@@ -1,0 +1,33 @@
+---
+interface Props {
+  title: string;
+  image: any;
+  url: string;
+}
+
+const { title, image, url } = Astro.props;
+---
+
+<div
+  class="font-['Darwin'] text-[32px] mt-8 font-bold text-[--page] border border-[--background]"
+>
+  <a
+    href={url}
+    class="w-full bg-[--damask] text-[--paper] flex items-center mb-2 pt-2 pl-2 pr-2"
+  >
+    {title}
+  </a>
+  <div class="flex items-center justify-center gap-8 p-4">
+    <a
+      href={url}
+      class="w-full h-[300px] border border-[--background] max-h-[300px] overflow-hidden"
+    >
+      {image}
+    </a>
+    <div class="w-full text-4 font-normal text-[--background]">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic cum nulla
+      similique vero praesentium ea adipisci iste alias maiores saepe sequi
+      dolorum numquam, facilis suscipit, soluta fugiat at dolore fugit.
+    </div>
+  </div>
+</div>

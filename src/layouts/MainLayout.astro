@@ -1,0 +1,26 @@
+---
+import Damask from "./Damask.astro";
+import Paper from "./Paper.astro";
+import Header from "../components/Header.astro";
+import "../styles/globals.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Satyaloka</title>
+  </head>
+  <body>
+    <Damask>
+      <Paper>
+        <Header />
+        <div class="font-['Darwin'] text-3xl">
+          <slot />
+        </div>
+      </Paper>
+    </Damask>
+  </body>
+</html>
