@@ -4,4 +4,7 @@ cover: "../../assets/images/xpos.png"
 coverAlt: "Test"
 tags: ["nextjs", "tailwind", "typescript", "programming", "compsci", "vector"]
 ---
-asdfa
+
+Over the past few weeks, I've been working on rebuilding my portfolio site from the ground up.
+
+W.I.P.
