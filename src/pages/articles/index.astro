@@ -3,7 +3,6 @@ import { getCollection } from "astro:content";
 import MainLayout from "../../layouts/MainLayout.astro";
 import ArticleMini from "../../components/ArticleMini.astro";
 import { Image } from "astro:assets";
-import Duotone from "../../components/Duotone.astro";
 
 const articles = await getCollection("articles");
 ---
@@ -12,9 +11,11 @@ const articles = await getCollection("articles");
   {
     articles.map((article) => {
       const image = (
-        <Duotone>
-          <Image src={article.data.cover} alt={article.data.coverAlt} />
-        </Duotone>
+        <Image
+          class="h-full"
+          src={article.data.cover}
+          alt={article.data.coverAlt}
+        />
       );
       return (
         <ArticleMini
