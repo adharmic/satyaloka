@@ -29,3 +29,7 @@
     width: 100vw;
     height: 100vh;
   }
+
+  .scroller {
+    scrollbar-color: var(--red) rgba(0,0,0,0);
+  }
