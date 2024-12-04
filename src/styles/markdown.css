@@ -1,0 +1,21 @@
+.article {
+  h1 {
+    color: var(--paper);
+    background: var(--damask);
+    padding: .5rem .5rem 0 .5rem;
+    width: fit-content;
+  }
+
+  img {
+    border: 2px solid var(--damask);
+  }
+
+  li {
+    list-style: square inside;
+  }
+
+  h2 {
+    font-weight: 900;
+    text-decoration: underline;
+  }
+}
