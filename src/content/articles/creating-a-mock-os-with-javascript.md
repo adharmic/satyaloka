@@ -1,8 +1,9 @@
 ---
-title: "Creating a Windows XP-like mock Operating System with NextJS"
+title: "Creating an XP-like Mock OS with JavaScript"
 cover: "../../assets/images/xpos.png"  
 coverAlt: "Test"
 tags: ["nextjs", "tailwind", "typescript", "programming", "compsci", "vector"]
+publishDate: 2024-12-04
 ---
 
 # Introduction

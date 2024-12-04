@@ -1,14 +1,14 @@
-<div
-  class="paper w-[1200px] h-full p-2 sm:p-16 flex flex-col overflow-y-scroll"
->
-  <slot />
+<div class="content w-[1200px] h-full flex flex-col">
+  <div class="paper p-2 sm:p-16">
+    <slot />
+  </div>
 </div>
 
 <style>
   .paper {
     background-color: var(--paper);
     background-image: url("/textures/paper.jpg");
-    background-size: 50%;
+    background-size: 40%;
     background-blend-mode: multiply;
   }
 </style>

@@ -7,15 +7,31 @@
   }
 
   img {
-    border: 2px solid var(--damask);
+    border: 4px solid var(--damask);
+  }
+
+  p {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   li {
     list-style: square inside;
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 
   h2 {
     font-weight: 900;
     text-decoration: underline;
+  }
+
+  a {
+    color: var(--red);
+    text-decoration: underline;
+  }
+
+  a:hover {
+    color: blue;
   }
 }

@@ -7,6 +7,7 @@ const articleCollection = defineCollection({
       cover: image(),
       coverAlt: z.string(),
       tags: z.array(z.string()),
+      publishDate: z.coerce.date().optional(),
     }),
 });
 
