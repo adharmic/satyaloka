@@ -40,7 +40,7 @@ While I was searching for inspiration and doing deep-dives on trending design ph
 
 </div>
 
-I got mixed reviews from this design, with some appreciating the bright colors and thick borders whereas others found it a little too childish and gimmicky for a professional portfolio site. Ultimately, I ended up scrapping the idea to build something a little more modern. Or should I say something a little _less_ retro?
+I got mixed reviews from this design, with some appreciating the bright colors and thick borders whereas others found it a little too childish and gimmicky for a professional portfolio site. Ultimately, I ended up scrapping the idea to build something a little more modern. Or should I say something a little _less retro_?
 
 # Riffing on Operating Systems
 With my recent explorations of Linux, I've been learning increasingly more about the lower levels of computing. I've always been fascinated by operating systems and I have a personal goal to eventually build one from scratch. Drawing inspiration from that desire, I decided to experiment with my knowledge of web technologies to try and simulate the _user experience_ of an operating system while still being functional as a personal portfolio.
