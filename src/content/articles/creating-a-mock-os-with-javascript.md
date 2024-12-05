@@ -8,11 +8,11 @@ description: "Over the past few weeks, I've been working on revamping my portfol
 ---
 
 # Introduction
-Over the past few weeks, I've been working on revamping my portfolio site. About time, too. For several years I've been using a React/ThreeJS portfolio that I built following a [tutorial](https://www.youtube.com/watch?v=0fYi8SGA20k).
+Over the past few weeks, I've been working on revamping my portfolio site. About time, too, as for the past several years I'd been using a React/ThreeJS portfolio that I built following a [tutorial](https://www.youtube.com/watch?v=0fYi8SGA20k).
 
-These days, I understand a whole lot more about all the things I didn't know I didn't know - especially when it comes to web development. My first task as a renewed Websmith was to rebuild my namesake website from the ground up.
+These days, I understand a whole lot more about all the things I didn't know I didn't know - especially when it comes to web development. My first task as a renewed Websmith was to rebuild my [namesake site](https://www.adithyajith.com/) from the ground up.
 
-I'll be writing up my progress as I go along, potentially turning this into a series if I scope larger. My goal is to demonstrate the thought processes, struggles, and feelings that go into a full-stack project like this.
+I'll be writing up my progress as I go along, potentially turning this into a series if I rescope or add features down the line. My goal is to demonstrate the thought processes, struggles, and feelings that go into a full-stack project like this.
 
 # The Planning Phase
 I had no idea what I wanted my portfolio to look like. Most of the web portfolios I've seen have been pretty cut and dry. Simple, static sites with a few pages of information and content. I spent a lot of time looking at various portfolio sites, and ultimately I decided I wanted something more representative of my personality. Thus, I went in with some requirements:
@@ -28,6 +28,19 @@ For a long time, the concepts of server vs client rendering seemed beyond my ken
 Prior to this portfolio, I mainly stuck to Vite and React for my web projects. But with NextJS's promise of easy SEO and performance potential, I wanted to give it a try. Plus, Vercel's hosting is a really easy way to share the progress of my website with others for feedback.
 
 # First Iteration
-My initial pass at a portfolio design was a fun exploration of neobrutalism.
+While I was searching for inspiration and doing deep-dives on trending design philosophies, I found a great [Medium article](https://medium.com/@sepidy/how-can-i-design-in-the-neo-brutalism-style-d85c458042de) on neobrutalism by Sepideh Yazdi. And so, my initial pass at a portfolio design was a fun exploration of a new-yet-retro aesthetic style.
 
-![An early neobrutalist version of my portfolio.](./Neobrutalism.png)
+<div class = "image">
+
+  ![An early neobrutalist version of my portfolio.](./Neobrutalism.png)
+
+  <div class="caption">
+    An early neobrutalist version of my portfolio.
+  </div>
+
+</div>
+
+I got mixed reviews from this design, with some appreciating the bright colors and thick borders whereas others found it a little too childish and gimmicky for a professional portfolio site. Ultimately, I ended up scrapping the idea to build something a little more modern. Or should I say something a little _less_ retro?
+
+# Riffing on Operating Systems
+With my recent explorations of Linux, I've been learning increasingly more about the lower levels of computing. I've always been fascinated by operating systems and I have a personal goal to eventually build one from scratch. Drawing inspiration from that desire, I decided to experiment with my knowledge of web technologies to try and simulate the _user experience_ of an operating system while still being functional as a personal portfolio.

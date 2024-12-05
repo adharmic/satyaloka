@@ -1,4 +1,17 @@
 .article {
+  .caption {
+    width: auto;
+    background: var(--damask);
+    margin: 0 2rem;
+    color: var(--paper);
+    padding: 0 1rem;
+    font-size: 1.5rem;
+  }
+
+  .image {
+    display: flex;
+    flex-direction: column;
+  }
 
   h1 {
     color: var(--paper);
@@ -12,6 +25,7 @@
   }
 
   p {
+    line-height: 2.5rem;
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -46,12 +60,16 @@
     }
 
     p {
-      text-indent: 1rem;
       padding: 0;
     }
 
     li {
       padding: 0 1rem;
     }   
+
+    .caption {
+      margin: 0;
+      font-size: 1rem;
+    }
   }
 }
