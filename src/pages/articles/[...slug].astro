@@ -29,11 +29,13 @@ const { Content } = await article.render();
         {article.data.title}
       </h1>
       <Image
-        class="border-[--damask] border-4"
+        class="border-[--damask] border-4 drop-shadow-lg"
         src={article.data.cover}
         alt={article.data.coverAlt}
       />
-      <div class="flex self-end text-lg bg-[--damask]">
+      <div
+        class="flex justify-between sm:self-end text-lg bg-[--damask] border-4 border-[--damask] items-center sm:justify-center"
+      >
         <p class="text-[--red] px-4 py-2">written by</p>
         <p class="bg-[--red] text-[--damask] px-4 py-2">Adithya Ajith</p>
         <p class="text-[--red] px-4 py-2">on</p>

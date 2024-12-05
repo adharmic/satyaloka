@@ -20,6 +20,7 @@ const articles = await getCollection("articles");
       return (
         <ArticleMini
           title={article.data.title}
+          description={article.data.description}
           image={image}
           url={"articles/" + article.slug}
         />

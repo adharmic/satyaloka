@@ -4,6 +4,7 @@ cover: "../../assets/images/xpos.png"
 coverAlt: "Test"
 tags: ["nextjs", "tailwind", "typescript", "programming", "compsci", "vector"]
 publishDate: 2024-12-04
+description: "Over the past few weeks, I've been working on revamping my portfolio site."
 ---
 
 # Introduction
@@ -14,9 +15,7 @@ These days, I understand a whole lot more about all the things I didn't know I d
 I'll be writing up my progress as I go along, potentially turning this into a series if I scope larger. My goal is to demonstrate the thought processes, struggles, and feelings that go into a full-stack project like this.
 
 # The Planning Phase
-I had no idea what I wanted my portfolio to look like. Most of the web portfolios I've seen have been pretty cut and dry. Simple, static sites with a few pages of information and content. I spent a lot of time looking at various portfolio sites, and ultimately I decided I wanted something more representative of my personality.
-
-Thus, I went in with some requirements:
+I had no idea what I wanted my portfolio to look like. Most of the web portfolios I've seen have been pretty cut and dry. Simple, static sites with a few pages of information and content. I spent a lot of time looking at various portfolio sites, and ultimately I decided I wanted something more representative of my personality. Thus, I went in with some requirements:
 - Made in NextJS and Tailwind
 - Full mobile compatibility
 - Interactive

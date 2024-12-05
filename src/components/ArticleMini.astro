@@ -3,13 +3,19 @@ interface Props {
   title: string;
   image: any;
   url: string;
+  description?: string;
 }
 
-const { title, image, url } = Astro.props;
+const { title, image, url, description } = Astro.props;
 ---
 
+<style>
+  .wrapper {
+    background-color: var(--paper);
+  }
+</style>
 <div
-  class="font-['Darwin'] text-[32px] mt-8 font-bold text-[--page] border border-[--background] bg-[--paper]"
+  class="wrapper drop-shadow-lg font-['Darwin'] text-[32px] mt-8 font-bold text-[--page] border-4 border-[--background]"
 >
   <a
     href={url}
@@ -24,10 +30,10 @@ const { title, image, url } = Astro.props;
     >
       {image}
     </a>
-    <div class="w-full text-4 font-normal text-[--background]">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic cum nulla
-      similique vero praesentium ea adipisci iste alias maiores saepe sequi
-      dolorum numquam, facilis suscipit, soluta fugiat at dolore fugit.
+    <div
+      class="w-full text-4 font-normal text-[--damask] text-ellipsis max-h-[20rem] overflow-hidden leading-10"
+    >
+      <p>{description}</p>
     </div>
   </div>
 </div>
