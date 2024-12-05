@@ -20,7 +20,9 @@ const { article } = Astro.props;
 const { Content } = await article.render();
 ---
 
-<MainLayout>
+<meta property="og:title" content={"Satyaloka - " + article.data.title} />
+<meta property="og:image" content={article.data.cover.src} />
+<meta property="og:url" content="https://satyaloka.org" /><MainLayout>
   <div class="pt-8 flex flex-col">
     <div class="font-['Darwin'] text-[--paper] flex flex-col">
       <h1 class="text-4xl font-bold p-4 pb-0 bg-[--damask] w-fit">
