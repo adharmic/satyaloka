@@ -47,7 +47,9 @@
   }
 
   a:hover {
-    color: blue;
+    background: var(--red);
+    color: var(--paper);
+    text-decoration: none;
   }
 
   @media (max-width: 500px) {
