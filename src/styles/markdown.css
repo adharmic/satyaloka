@@ -1,4 +1,8 @@
 .article {
+  .image-small {
+    max-width: 500px;
+  }
+
   .caption {
     width: auto;
     background: var(--damask);
@@ -11,6 +15,7 @@
   .image {
     display: flex;
     flex-direction: column;
+    align-self: center;
   }
 
   h1 {
