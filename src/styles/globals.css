@@ -36,3 +36,19 @@
   .scroller {
     scrollbar-color: var(--red) rgba(0,0,0,0);
   }
+
+  .link {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+     padding-top: .25rem;
+    color: var(--red);
+    text-decoration: underline;
+  }
+
+  .link:hover {
+    background: var(--red);
+    color: var(--paper);
+    cursor: pointer;
+  }
+

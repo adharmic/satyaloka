@@ -5,6 +5,7 @@ coverAlt: "Test"
 tags: ["nextjs", "tailwind", "typescript", "programming", "compsci", "vector"]
 publishDate: 2024-12-04
 description: "Over the past few weeks, I've been working on revamping my portfolio site."
+featured: true
 ---
 
 # Introduction

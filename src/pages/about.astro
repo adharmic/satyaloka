@@ -1,5 +1,42 @@
 ---
+import PageHeader from "../components/decorations/PageHeader.astro";
+import Prose from "../components/Prose.astro";
 import MainLayout from "../layouts/MainLayout.astro";
+import "../styles/markdown.css";
 ---
 
-<MainLayout> About is WIP. </MainLayout>
+<MainLayout>
+  <PageHeader> ABOUT </PageHeader>
+  <Prose>
+    <h1>What is Satyaloka?</h1>
+    <p>
+      Satyaloka is a site I made to document the things I work on. As someone
+      with a ton of hobbies that I often bounce between, it can feel like I
+      don't make a lot of steady progress in advancing the goals I have as a
+      digital creative.
+    </p>
+    <p>
+      I made this site as a way to provide updates on the things that I'm
+      working on. Both for myself and for those curious about my projects,
+      although I'm not sure how many there are of the latter quite yet. This
+      blog won't aim to be objective (unless the content calls for it) as it is
+      an inherently opinionated exploration of my own interests.
+    </p>
+    <h1>Really, what is <em>"Satyaloka?"</em></h1>
+    <p>
+      <em>Satya</em> is a Sanskrit word roughly meaning <em>truth</em>.
+    </p>
+    <p>
+      <em>Loka</em> is a Sanksrit word that can mean <em>dimension</em> or <em
+        >abode</em
+      >.
+    </p>
+    <p>
+      When combined, the two terms are often used as the name for the domain or
+      home of Brahma - the chief god of creation in the Hindu mythos.
+      Creativity, to me, is the essence of humanity; imagination is the closest
+      thing we have to divinity. I chose the name Satyaloka as an homage to the
+      neglected creator. To exemplify those values which are sacred to me.
+    </p>
+  </Prose>
+</MainLayout>

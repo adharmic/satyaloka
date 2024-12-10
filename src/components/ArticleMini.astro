@@ -4,9 +4,10 @@ interface Props {
   image: any;
   url: string;
   description?: string;
+  tags?: Array<string>;
 }
 
-const { title, image, url, description } = Astro.props;
+const { title, image, url, description, tags } = Astro.props;
 ---
 
 <style>
@@ -15,25 +16,41 @@ const { title, image, url, description } = Astro.props;
   }
 </style>
 <div
-  class="wrapper drop-shadow-lg font-['Darwin'] text-[32px] mt-8 font-bold text-[--page] border-4 border-[--background]"
+  class="wrapper drop-shadow-lg font-['Darwin'] text-[32px] font-bold text-[--page] border-4 border-[--background]"
 >
   <a
     href={url}
-    class="w-full bg-[--damask] text-[--paper] flex items-center mb-2 pt-2 pl-2 pr-2"
+    class="flex items-center pt-4 px-4 pb-2 border-b-4 border-[--damask] bg-[--damask] text-[--paper] hover:underline"
   >
     {title}
   </a>
-  <div class="flex flex-col sm:flex-row items-center justify-center gap-8 p-4">
+  <div
+    class="flex flex-col sm:flex-row items-center justify-center w-full h-full"
+  >
     <a
       href={url}
-      class="w-full border border-[--background] max-h-[300px] overflow-hidden"
+      class="w-full border-r-4 border-[--background] overflow-hidden"
     >
       {image}
     </a>
     <div
-      class="w-full text-4 font-normal text-[--damask] text-ellipsis max-h-[20rem] overflow-hidden leading-10"
+      class="p-2 sm:p-8 w-full h-full text-4 font-normal text-[--damask] text-ellipsis overflow-hidden leading-10 flex flex-col gap-4 items-center"
     >
-      <p>{description}</p>
+      <p class="max-h-[20rem]">
+        {description + " "}<a class="link">Read More</a>
+      </p>
+
+      <div class="h-full flex flex-wrap gap-2 text-xl">
+        {
+          tags?.map((tag) => {
+            return (
+              <a class="bg-[--red] p-2 pb text-[--paper] hover:cursor-pointer hover:bg-[--damask] transition-all">
+                {tag}
+              </a>
+            );
+          })
+        }
+      </div>
     </div>
   </div>
 </div>

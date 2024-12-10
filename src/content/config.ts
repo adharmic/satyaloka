@@ -9,6 +9,7 @@ const articleCollection = defineCollection({
       tags: z.array(z.string()),
       publishDate: z.coerce.date().optional(),
       description: z.string().optional(),
+      featured: z.boolean().optional(),
     }),
 });
 

@@ -3,19 +3,19 @@ import { getCollection } from "astro:content";
 import MainLayout from "../../layouts/MainLayout.astro";
 import ArticleMini from "../../components/ArticleMini.astro";
 import { Image } from "astro:assets";
+import PageHeader from "../../components/decorations/PageHeader.astro";
 
 const articles = await getCollection("articles");
 ---
 
 <MainLayout>
+  <div class="w-full flex items-center justify-center">
+    <PageHeader> ARTICLES </PageHeader>
+  </div>
   {
     articles.map((article) => {
       const image = (
-        <Image
-          class="h-full"
-          src={article.data.cover}
-          alt={article.data.coverAlt}
-        />
+        <Image src={article.data.cover} alt={article.data.coverAlt} />
       );
       return (
         <ArticleMini
@@ -23,6 +23,7 @@ const articles = await getCollection("articles");
           description={article.data.description}
           image={image}
           url={"articles/" + article.slug}
+          tags={article.data.tags}
         />
       );
     })
