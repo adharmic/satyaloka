@@ -1,0 +1,57 @@
+---
+import { getCollection } from "astro:content";
+import MainLayout from "../../layouts/MainLayout.astro";
+import Prose from "../../components/Prose.astro";
+import { Image } from "astro:assets";
+
+export async function getStaticPaths() {
+  const artwork = await getCollection("artwork");
+  return artwork.map((artwork) => ({
+    params: {
+      slug: artwork.slug,
+    },
+    props: {
+      artwork,
+    },
+  }));
+}
+
+const { artwork } = Astro.props;
+const { Content } = await artwork.render();
+---
+
+<meta property="og:title" content={"Artwork - " + artwork.data.title} />
+<meta property="og:image" content={artwork.data.cover.src} />
+<meta property="og:url" content="https://satyaloka.org" /><MainLayout>
+  <div class="pt-8 flex flex-col">
+    <div class="font-['Darwin'] text-[--paper] flex flex-col">
+      <h1
+        class="text-4xl font-bold p-4 pb-0 bg-[--damask] w-fit border-4 border-[--red]"
+      >
+        {artwork.data.title}
+      </h1>
+      <div class="w-full flex items-center justify-center">
+        <Image
+          class="border-[--damask] border-0 drop-shadow-lg"
+          src={artwork.data.cover}
+          alt={artwork.data.coverAlt}
+        />
+      </div>
+      <div
+        class="flex justify-between sm:self-end text-lg bg-[--damask] border-4 border-[--damask] items-stretch sm:items-center sm:justify-center overflow-hidden text-ellipsis"
+      >
+        <p class="text-[--red] px-4 py-2">by</p>
+        <p class="bg-[--red] text-[--damask] px-4 py-2">Adithya Ajith</p>
+        <p class="text-[--red] px-4 py-2">on</p>
+        <p class="bg-[--red] text-[--damask] px-4 py-2">
+          {artwork.data.publishDate?.toDateString()}
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="pt-8 sm:pt-0">
+    <Prose>
+      <Content />
+    </Prose>
+  </div>
+</MainLayout>

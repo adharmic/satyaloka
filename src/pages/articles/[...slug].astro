@@ -20,7 +20,7 @@ const { article } = Astro.props;
 const { Content } = await article.render();
 ---
 
-<meta property="og:title" content={"Satyaloka - " + article.data.title} />
+<meta property="og:title" content={"Article - " + article.data.title} />
 <meta property="og:image" content={article.data.cover.src} />
 <meta property="og:url" content="https://satyaloka.org" /><MainLayout>
   <div class="pt-8 flex flex-col">
@@ -29,7 +29,7 @@ const { Content } = await article.render();
         {article.data.title}
       </h1>
       <Image
-        class="border-[--damask] border-4 drop-shadow-lg"
+        class="border-[--damask] border-4 drop-shadow-lg w-full flex items-center justify-center"
         src={article.data.cover}
         alt={article.data.coverAlt}
       />
@@ -45,7 +45,9 @@ const { Content } = await article.render();
       </div>
     </div>
   </div>
-  <Prose>
-    <Content />
-  </Prose>
+  <div class="pt-8 sm:pt-0">
+    <Prose>
+      <Content />
+    </Prose>
+  </div>
 </MainLayout>

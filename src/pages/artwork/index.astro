@@ -1,8 +1,37 @@
 ---
-import PageHeader from "../../components/decorations/PageHeader.astro";
+import { getCollection } from "astro:content";
+import ArtworkMini from "../../components/ArtworkMini.astro";
 import MainLayout from "../../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import PageHeader from "../../components/decorations/PageHeader.astro";
+
+const artwork = await getCollection("artwork");
 ---
 
 <MainLayout>
-  <PageHeader> ARTWORK </PageHeader>
+  <div class="w-full flex items-center justify-center">
+    <PageHeader> ARTWORK </PageHeader>
+  </div>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+    {
+      artwork.map((artwork, index) => {
+        const image = (
+          <Image
+            class="h-[400px] w-[400px] object-cover"
+            src={artwork.data.cover}
+            alt={artwork.data.coverAlt}
+          />
+        );
+        return (
+          <ArtworkMini
+            red={index % 2 == 1}
+            title={artwork.data.title}
+            image={image}
+            url={"artwork/" + artwork.slug}
+            tags={artwork.data.tags}
+          />
+        );
+      })
+    }
+  </div>
 </MainLayout>
