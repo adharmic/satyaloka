@@ -42,19 +42,36 @@ Maybe frontloading the creative labor isn't the best idea, but I find it hard to
 
 
 
-  <div class = "row">
+<div class = "image">
 
   ![I got to work in Blender demaking the concept to fit the retro aesthetic.](./model.png)
-  ![Applied some textures.](./textured.png)
-  ![And painted a face.](./closeup.png)
   
   <div class="caption">
     I got to work in Blender demaking the concept to fit the retro aesthetic.
   </div>
   
+</div>
+
+
+<div class = "image">
+
+  ![Applied some textures.](./textured.png)
+  
+  <div class = "caption">
+    Applied some textures.
+  </div>
+  
+</div>
+
+<div class = "image">
+  
+  ![And painted a face.](./closeup.png)
+
+  <div class="caption">
+    And painted a face.
   </div>
 
-
+</div>
 
 ## Setting the Scene
 I wanted the game to have an ethereal, dreamlike feel. A snowy and abandoned road - emphasizing themes of isolation, exploiting that natural human fear of the unknown - fit perfectly.
@@ -66,7 +83,7 @@ After messing around awhile with the new nodes introduced by the extension, I ha
 I then got to work creating particle effects for the snow. Godot has a lot of built-in tools for image generation that made this process really easy (especially when combined with community resources like [this tutorial](https://www.youtube.com/watch?v=n5RAGhxHo28) from DevPoodle).
 
 
-<div class = "row">
+<div class = "image">
 
   <div class="caption">
 To tie the scene together, I added and tuned a world environment, directional light, volumetric fog, and downscaled the resolution to emulate lower-fidelity systems. </div>
@@ -100,15 +117,14 @@ I put a small 3-digit combination safe with the key to the gas station inside, a
 ## It's Alive!
 Rigging and animating the Hollowed was pretty similar to normal humanoid rigs with Rigify. 
 
-<div class = "row">
+<div class = "image">
 
+  ![My animations are still a little stiff, but I think that works to my advantage with this character.](./hollowed_walk.gif)
+  
   <div class="caption">
-My animations are still a little stiff, but I think that works to my advantage with this character.
+    My animations are still a little stiff, but I think that works to my advantage with this character.
   </div>
   
-  ![My animations are still a little stiff, but I think that works to my advantage with this character.](./hollowed_walk.gif)
-
-
 </div>
 
 
@@ -120,15 +136,24 @@ To create the actual combination, I generated three random integers between 0 an
 To make it a little easier, I color-coded the numbers by their position in the combination. Plus, you only really need two of the numbers to unlock the safe.
 
 
-<div class = "row">
+<div class = "image">
 
   ![The information is only visible when the flashlight is on.](./flashlight_shader.gif)
-  ![The information is only visible when the flashlight is on.](./toilet.png)
   
   <div class="caption">
     The information is only visible when the flashlight is on.
   </div>
 
+</div>
+  
+<div class="image">
+
+  ![Same with the graffiti in the stalls.](./toilet.png)
+
+  <div class="caption">
+    Same with the graffiti in the stalls.
+  </div>
+  
 </div>
 
 
