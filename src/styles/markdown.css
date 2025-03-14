@@ -20,7 +20,7 @@
     justify-items: center;
   }
 
-  .row {
+  .row p {
     width: 100%;
     display: flex;
     gap: 1rem;
