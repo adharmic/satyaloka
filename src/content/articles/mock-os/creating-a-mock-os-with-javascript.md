@@ -38,7 +38,6 @@ While I was searching for inspiration and doing deep-dives on trending design ph
   <div class="caption">
     An early neobrutalist version of my portfolio.
   </div>
-
 </div>
 
 I got mixed reviews from this design, with some appreciating the bright colors and thick borders whereas others found it a little too childish and gimmicky for a professional portfolio site. Ultimately, I ended up scrapping the idea to build something a little more modern. Or should I say something a little _less retro_?

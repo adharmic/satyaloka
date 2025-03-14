@@ -17,7 +17,7 @@ const featuredArticles = await getCollection("articles", ({ data }) => {
     pieces as I work to add more in my free time.
   </p>
   <PageHeader> FEATURED </PageHeader>
-  <div class="flex flex-col w-full">
+  <div class="flex flex-col w-full gap-2">
     {
       featuredArticles.map((article) => {
         const image = (

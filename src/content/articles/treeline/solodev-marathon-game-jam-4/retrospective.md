@@ -31,6 +31,7 @@ Maybe frontloading the creative labor isn't the best idea, but I find it hard to
 
 
 <div class = "image">
+
   ![I spent a while sketching out ideas before I had one that I could act on.](./sketch.png)
 
   <div class="caption">
@@ -41,6 +42,7 @@ Maybe frontloading the creative labor isn't the best idea, but I find it hard to
 
 
 <div class = "image">
+
   ![I got to work in Blender demaking the concept to fit the retro aesthetic.](./model.png)
   ![Applied some textures.](./textured.png)
   ![And painted a face.](./closeup.png)
@@ -63,6 +65,7 @@ I then got to work creating particle effects for the snow. Godot has a lot of bu
 
 
 <div class = "image">
+
   ![To tie the scene together, I added and tuned a world environment, directional light, volumetric fog, and downscaled the resolution to emulate lower-fidelity systems.](./hollowed.png)
 
   <div class="caption">
@@ -78,6 +81,7 @@ It's a favorite trope of mine. So I made one in Blender. To hone in on the creep
 I mashed together "gas" and "mart" to create the extremely witty name for my gas station market, "GASMART." 
 
 <div class = "image">
+
   ![At least it's got the "smart" double entendre, I guess.](./station.png)
 
   <div class="caption">
@@ -85,7 +89,6 @@ At least it's got the "smart" double entendre, I guess.
   </div>
 
 </div>
-![[Pasted image 20250314092839.png]]
 
 ## Time for a Gameplay Loop
 So far, most of the game is just a walking simulator. I wanted to have at least _one_ gameplay loop closed by the time the jam was over. I decided to implement it in the GASMART bathroom. I modeled an interior, some toilets, stalls, sinks, counters, and a closet.
@@ -94,7 +97,9 @@ I put a small 3-digit combination safe with the key to the gas station inside, a
 
 ## It's Alive!
 Rigging and animating the Hollowed was pretty similar to normal humanoid rigs with Rigify. 
+
 <div class = "image">
+
   ![My animations are still a little stiff, but I think that works to my advantage with this character.](./hollowed_walk.gif)
 
   <div class="caption">
@@ -112,6 +117,7 @@ To create the actual combination, I generated three random integers between 0 an
 To make it a little easier, I color-coded the numbers by their position in the combination. Plus, you only really need two of the numbers to unlock the safe.
 
 <div class = "image">
+
   ![The information is only visible when the flashlight is on.](./flashlight_shader.gif)
   ![The information is only visible when the flashlight is on.](./toilet.png)
 
