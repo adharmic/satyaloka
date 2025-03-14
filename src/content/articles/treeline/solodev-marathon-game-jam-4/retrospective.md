@@ -32,7 +32,7 @@ Maybe frontloading the creative labor isn't the best idea, but I find it hard to
 
 <div class = "image">
 
-  <img src="./sketch.png" alt="I spent a while sketching out ideas before I had one that I could act on." />
+  ![Sketch of the Hollowed](./sketch.png)
 
   <div class="caption">
     I spent a while sketching out ideas before I had one that I could act on.
@@ -44,9 +44,9 @@ Maybe frontloading the creative labor isn't the best idea, but I find it hard to
 
   <div class = "row">
 
-  <img src="./model.png" alt="I got to work in Blender demaking the concept to fit the retro aesthetic." />
-  <img src="./textured.png" alt="Applied some textures." />
-  <img src="./closeup.png" alt="And painted a face." />
+  ![I got to work in Blender demaking the concept to fit the retro aesthetic.](./model.png)
+  ![Applied some textures.](./textured.png)
+  ![And painted a face.](./closeup.png)
   
   <div class="caption">
     I got to work in Blender demaking the concept to fit the retro aesthetic.
@@ -71,7 +71,7 @@ I then got to work creating particle effects for the snow. Godot has a lot of bu
   <div class="caption">
 To tie the scene together, I added and tuned a world environment, directional light, volumetric fog, and downscaled the resolution to emulate lower-fidelity systems. </div>
 
-  <img src="./hollowed.png" alt="To tie the scene together, I added and tuned a world environment, directional light, volumetric fog, and downscaled the resolution to emulate lower-fidelity systems." />
+  ![To tie the scene together, I added and tuned a world environment, directional light, volumetric fog, and downscaled the resolution to emulate lower-fidelity systems.](./hollowed.png)
 
 </div>
 
@@ -84,7 +84,7 @@ I mashed together "gas" and "mart" to create the extremely witty name for my gas
 
 <div class = "image">
 
-  <img src="./station.png" alt="At least it's got the 'smart' double entendre, I guess." />
+  ![At least it's got the 'smart' double entendre, I guess.](./station.png)
 
   <div class="caption">
 At least it's got the "smart" double entendre, I guess.
@@ -106,7 +106,7 @@ Rigging and animating the Hollowed was pretty similar to normal humanoid rigs wi
 My animations are still a little stiff, but I think that works to my advantage with this character.
   </div>
   
-  <img src="./hollowed_walk.gif" alt="My animations are still a little stiff, but I think that works to my advantage with this character." />
+  ![My animations are still a little stiff, but I think that works to my advantage with this character.](./hollowed_walk.gif)
 
 
 </div>
@@ -122,8 +122,8 @@ To make it a little easier, I color-coded the numbers by their position in the c
 
 <div class = "row">
 
-  <img src="./flashlight_shader.gif" alt="The information is only visible when the flashlight is on." />
-  <img src="./toilet.png" alt="The information is only visible when the flashlight is on." />
+  ![The information is only visible when the flashlight is on.](./flashlight_shader.gif)
+  ![The information is only visible when the flashlight is on.](./toilet.png)
   
   <div class="caption">
     The information is only visible when the flashlight is on.
