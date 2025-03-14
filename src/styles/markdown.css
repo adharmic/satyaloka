@@ -4,7 +4,7 @@
   }
 
   .caption {
-    width: auto;
+    width: fit;
     background: var(--damask);
     margin: 0 2rem;
     color: var(--paper);
@@ -16,6 +16,15 @@
     display: flex;
     flex-direction: column;
     align-self: center;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: between;
   }
 
   h1 {

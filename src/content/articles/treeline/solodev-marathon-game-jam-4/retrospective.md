@@ -43,9 +43,13 @@ Maybe frontloading the creative labor isn't the best idea, but I find it hard to
 
 <div class = "image">
 
+  <div class = "row">
+  
   ![I got to work in Blender demaking the concept to fit the retro aesthetic.](./model.png)
   ![Applied some textures.](./textured.png)
   ![And painted a face.](./closeup.png)
+  
+  </div>
 
   <div class="caption">
     I got to work in Blender demaking the concept to fit the retro aesthetic.
