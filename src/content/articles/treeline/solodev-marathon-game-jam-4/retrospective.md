@@ -85,10 +85,11 @@ I then got to work creating particle effects for the snow. Godot has a lot of bu
 
 <div class = "image">
 
+  ![To tie the scene together, I added and tuned a world environment, directional light, volumetric fog, and downscaled the resolution to emulate lower-fidelity systems.](./hollowed.png)
+  
   <div class="caption">
 To tie the scene together, I added and tuned a world environment, directional light, volumetric fog, and downscaled the resolution to emulate lower-fidelity systems. </div>
 
-  ![To tie the scene together, I added and tuned a world environment, directional light, volumetric fog, and downscaled the resolution to emulate lower-fidelity systems.](./hollowed.png)
 
 </div>
 
