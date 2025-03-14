@@ -1,6 +1,6 @@
 ---
 title: "Solodev Marathon Game Jam 4: A Retrospective"
-cover: "../photos/main_menu"  
+cover: "../photos/main_menu.png"  
 coverAlt: "A screenshot of the main menu of Treeline."
 tags: ["godot", "gamedev", "blender"]
 publishDate: 2025-03-14
