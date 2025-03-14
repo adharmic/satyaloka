@@ -4,7 +4,7 @@
   }
 
   .caption {
-    width: fit;
+    width: max;
     background: var(--damask);
     margin: 0 2rem;
     color: var(--paper);
@@ -20,7 +20,7 @@
     justify-items: center;
   }
 
-  .row {
+  .row p {
     display: flex;
     flex-direction: row;
     align-items: center;

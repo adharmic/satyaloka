@@ -68,12 +68,12 @@ After messing around awhile with the new nodes introduced by the extension, I ha
 I then got to work creating particle effects for the snow. Godot has a lot of built-in tools for image generation that made this process really easy (especially when combined with community resources like [this tutorial](https://www.youtube.com/watch?v=n5RAGhxHo28) from DevPoodle).
 
 
-<div class = "image">
-
-  ![To tie the scene together, I added and tuned a world environment, directional light, volumetric fog, and downscaled the resolution to emulate lower-fidelity systems.](./hollowed.png)
+<div class = "image row">
 
   <div class="caption">
 To tie the scene together, I added and tuned a world environment, directional light, volumetric fog, and downscaled the resolution to emulate lower-fidelity systems. </div>
+
+  ![To tie the scene together, I added and tuned a world environment, directional light, volumetric fog, and downscaled the resolution to emulate lower-fidelity systems.](./hollowed.png)
 
 </div>
 
@@ -102,7 +102,7 @@ I put a small 3-digit combination safe with the key to the gas station inside, a
 ## It's Alive!
 Rigging and animating the Hollowed was pretty similar to normal humanoid rigs with Rigify. 
 
-<div class = "image">
+<div class = "image row">
 
   ![My animations are still a little stiff, but I think that works to my advantage with this character.](./hollowed_walk.gif)
 
@@ -122,9 +122,12 @@ To make it a little easier, I color-coded the numbers by their position in the c
 
 <div class = "image">
 
+<div class = "row">
+
   ![The information is only visible when the flashlight is on.](./flashlight_shader.gif)
   ![The information is only visible when the flashlight is on.](./toilet.png)
 
+</div>
   <div class="caption">
     The information is only visible when the flashlight is on.
   </div>
