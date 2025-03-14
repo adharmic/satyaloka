@@ -26,7 +26,16 @@
     gap: 1rem;
     flex-direction: row;
     align-items: center;
-    justify-items: between;
+    justify-items: space-between;
+  }
+
+  .row {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    align-items: center;
+    justify-items: space-between;
   }
 
   h1 {
