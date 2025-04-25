@@ -4,14 +4,17 @@ import MainLayout from "../../layouts/MainLayout.astro";
 import ArticleMini from "../../components/ArticleMini.astro";
 import { Image } from "astro:assets";
 import PageHeader from "../../components/decorations/PageHeader.astro";
+import Separator from "../../components/decorations/Separator.astro";
 
 const articles = await getCollection("articles");
 ---
 
 <MainLayout>
-  <div class="w-full flex items-center justify-center">
+  <div class="w-full flex items-center ">
     <PageHeader> ARTICLES </PageHeader>
   </div>
+  <Separator />
+  <div class="w-full flex flex-col gap-8 mt-8">
   {
     articles.map((article) => {
       const image = (
@@ -28,4 +31,5 @@ const articles = await getCollection("articles");
       );
     })
   }
+  </div>
 </MainLayout>

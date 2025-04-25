@@ -4,15 +4,18 @@ import ArtworkMini from "../../components/ArtworkMini.astro";
 import MainLayout from "../../layouts/MainLayout.astro";
 import { Image } from "astro:assets";
 import PageHeader from "../../components/decorations/PageHeader.astro";
+import Separator from "../../components/decorations/Separator.astro";
 
 const artwork = await getCollection("artwork");
 ---
 
 <MainLayout>
-  <div class="w-full flex items-center justify-center">
+  <div class="w-full flex flex-row items-center gap-8">
     <PageHeader> ARTWORK </PageHeader>
+  <p><i>"For art is never truly completed - only abandoned."</i> -Leonardo Da Vinci</p>
   </div>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+  <Separator />
+  <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
     {
       artwork.map((artwork, index) => {
         const image = (

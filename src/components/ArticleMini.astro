@@ -16,7 +16,7 @@ const { title, image, url, description, tags } = Astro.props;
   }
 </style>
 <div
-  class="wrapper drop-shadow-lg font-['Darwin'] text-[32px] font-bold text-[--page] border-4 border-[--background]"
+  class="wrapper drop-shadow-xl font-['Darwin'] text-[32px] font-bold text-[--page] border-4 border-[--background] rounded-lg"
 >
   <a
     href={url}
@@ -40,11 +40,11 @@ const { title, image, url, description, tags } = Astro.props;
         {description + " "}<a class="link" href={url}>Read More</a>
       </p>
 
-      <div class="h-full flex flex-wrap gap-2 text-xl">
+      <div class="h-full flex flex-wrap gap-2 text-xl self-start">
         {
           tags?.map((tag) => {
             return (
-              <a class="bg-[--red] p-2 pb text-[--paper] hover:cursor-pointer hover:bg-[--damask] transition-all">
+              <a class="bg-[--red] p-2 pb text-[--paper] hover:cursor-pointer hover:bg-[--damask] transition-all flex items-center justify-center rounded-lg">
                 {tag}
               </a>
             );
